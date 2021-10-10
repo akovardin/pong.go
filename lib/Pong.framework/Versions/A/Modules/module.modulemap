@@ -1,0 +1,10 @@
+framework module "Pongmobile" {
+    header "Ebitenmobileview.objc.h"
+    header "Pong.h"
+    header "Pongmobile.objc.h"
+    header "PongmobileEbitenViewController.h"
+    header "Universe.objc.h"
+    header "ref.h"
+
+    export *
+}

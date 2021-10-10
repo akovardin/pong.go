@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AC0D842C271257F900706D34 /* PongmobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D842B271257F900706D34 /* PongmobileApp.swift */; };
+		AC0D842E271257F900706D34 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D842D271257F900706D34 /* ContentView.swift */; };
+		AC0D8430271257FC00706D34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0D842F271257FC00706D34 /* Assets.xcassets */; };
+		AC0D8433271257FC00706D34 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0D8432271257FC00706D34 /* Preview Assets.xcassets */; };
+		AC0D8435271257FC00706D34 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D8434271257FC00706D34 /* Persistence.swift */; };
+		AC0D8438271257FC00706D34 /* Pongmobile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC0D8436271257FC00706D34 /* Pongmobile.xcdatamodeld */; };
+		AC0D8443271257FD00706D34 /* PongmobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D8442271257FD00706D34 /* PongmobileTests.swift */; };
+		AC0D844E271257FD00706D34 /* PongmobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0D844D271257FD00706D34 /* PongmobileUITests.swift */; };
+		AC5F1E85271278050097A428 /* Mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC5F1E84271278050097A428 /* Mobile.framework */; };
+		AC5F1E86271278050097A428 /* Mobile.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC5F1E84271278050097A428 /* Mobile.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		ACF4897327125D13009B7068 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF4897227125D13009B7068 /* GameController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC0D843F271257FD00706D34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC0D8420271257F900706D34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC0D8427271257F900706D34;
+			remoteInfo = Pongmobile;
+		};
+		AC0D844A271257FD00706D34 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC0D8420271257F900706D34 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC0D8427271257F900706D34;
+			remoteInfo = Pongmobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AC5F1E7827126B370097A428 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AC5F1E86271278050097A428 /* Mobile.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AC0D8428271257F900706D34 /* Pongmobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pongmobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0D842B271257F900706D34 /* PongmobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PongmobileApp.swift; sourceTree = "<group>"; };
+		AC0D842D271257F900706D34 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AC0D842F271257FC00706D34 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC0D8432271257FC00706D34 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AC0D8434271257FC00706D34 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		AC0D8437271257FC00706D34 /* Pongmobile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pongmobile.xcdatamodel; sourceTree = "<group>"; };
+		AC0D8439271257FC00706D34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0D843E271257FD00706D34 /* PongmobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PongmobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0D8442271257FD00706D34 /* PongmobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PongmobileTests.swift; sourceTree = "<group>"; };
+		AC0D8444271257FD00706D34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0D8449271257FD00706D34 /* PongmobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PongmobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0D844D271257FD00706D34 /* PongmobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PongmobileUITests.swift; sourceTree = "<group>"; };
+		AC0D844F271257FD00706D34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC5F1E7A27126DA90097A428 /* Mobile-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mobile-Bridging-Header.h"; sourceTree = "<group>"; };
+		AC5F1E84271278050097A428 /* Mobile.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mobile.framework; path = ../../lib/Mobile.framework; sourceTree = "<group>"; };
+		ACF4897227125D13009B7068 /* GameController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC0D8425271257F900706D34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC5F1E85271278050097A428 /* Mobile.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0D843B271257FD00706D34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0D8446271257FD00706D34 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC0D841F271257F900706D34 = {
+			isa = PBXGroup;
+			children = (
+				AC0D842A271257F900706D34 /* Pongmobile */,
+				AC0D8441271257FD00706D34 /* PongmobileTests */,
+				AC0D844C271257FD00706D34 /* PongmobileUITests */,
+				AC0D8429271257F900706D34 /* Products */,
+				AC5F1E83271278050097A428 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AC0D8429271257F900706D34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC0D8428271257F900706D34 /* Pongmobile.app */,
+				AC0D843E271257FD00706D34 /* PongmobileTests.xctest */,
+				AC0D8449271257FD00706D34 /* PongmobileUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC0D842A271257F900706D34 /* Pongmobile */ = {
+			isa = PBXGroup;
+			children = (
+				AC0D842B271257F900706D34 /* PongmobileApp.swift */,
+				AC0D842D271257F900706D34 /* ContentView.swift */,
+				AC0D842F271257FC00706D34 /* Assets.xcassets */,
+				AC0D8434271257FC00706D34 /* Persistence.swift */,
+				AC0D8439271257FC00706D34 /* Info.plist */,
+				AC0D8436271257FC00706D34 /* Pongmobile.xcdatamodeld */,
+				AC0D8431271257FC00706D34 /* Preview Content */,
+				ACF4897227125D13009B7068 /* GameController.swift */,
+				AC5F1E7A27126DA90097A428 /* Mobile-Bridging-Header.h */,
+			);
+			path = Pongmobile;
+			sourceTree = "<group>";
+		};
+		AC0D8431271257FC00706D34 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				AC0D8432271257FC00706D34 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC0D8441271257FD00706D34 /* PongmobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC0D8442271257FD00706D34 /* PongmobileTests.swift */,
+				AC0D8444271257FD00706D34 /* Info.plist */,
+			);
+			path = PongmobileTests;
+			sourceTree = "<group>";
+		};
+		AC0D844C271257FD00706D34 /* PongmobileUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AC0D844D271257FD00706D34 /* PongmobileUITests.swift */,
+				AC0D844F271257FD00706D34 /* Info.plist */,
+			);
+			path = PongmobileUITests;
+			sourceTree = "<group>";
+		};
+		AC5F1E83271278050097A428 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC5F1E84271278050097A428 /* Mobile.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC0D8427271257F900706D34 /* Pongmobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC0D8452271257FD00706D34 /* Build configuration list for PBXNativeTarget "Pongmobile" */;
+			buildPhases = (
+				AC0D8424271257F900706D34 /* Sources */,
+				AC0D8425271257F900706D34 /* Frameworks */,
+				AC0D8426271257F900706D34 /* Resources */,
+				AC5F1E7827126B370097A428 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pongmobile;
+			productName = Pongmobile;
+			productReference = AC0D8428271257F900706D34 /* Pongmobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC0D843D271257FD00706D34 /* PongmobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC0D8455271257FD00706D34 /* Build configuration list for PBXNativeTarget "PongmobileTests" */;
+			buildPhases = (
+				AC0D843A271257FD00706D34 /* Sources */,
+				AC0D843B271257FD00706D34 /* Frameworks */,
+				AC0D843C271257FD00706D34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC0D8440271257FD00706D34 /* PBXTargetDependency */,
+			);
+			name = PongmobileTests;
+			productName = PongmobileTests;
+			productReference = AC0D843E271257FD00706D34 /* PongmobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AC0D8448271257FD00706D34 /* PongmobileUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC0D8458271257FD00706D34 /* Build configuration list for PBXNativeTarget "PongmobileUITests" */;
+			buildPhases = (
+				AC0D8445271257FD00706D34 /* Sources */,
+				AC0D8446271257FD00706D34 /* Frameworks */,
+				AC0D8447271257FD00706D34 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC0D844B271257FD00706D34 /* PBXTargetDependency */,
+			);
+			name = PongmobileUITests;
+			productName = PongmobileUITests;
+			productReference = AC0D8449271257FD00706D34 /* PongmobileUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC0D8420271257F900706D34 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					AC0D8427271257F900706D34 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					AC0D843D271257FD00706D34 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = AC0D8427271257F900706D34;
+					};
+					AC0D8448271257FD00706D34 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = AC0D8427271257F900706D34;
+					};
+				};
+			};
+			buildConfigurationList = AC0D8423271257F900706D34 /* Build configuration list for PBXProject "Pongmobile" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC0D841F271257F900706D34;
+			productRefGroup = AC0D8429271257F900706D34 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC0D8427271257F900706D34 /* Pongmobile */,
+				AC0D843D271257FD00706D34 /* PongmobileTests */,
+				AC0D8448271257FD00706D34 /* PongmobileUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC0D8426271257F900706D34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0D8433271257FC00706D34 /* Preview Assets.xcassets in Resources */,
+				AC0D8430271257FC00706D34 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0D843C271257FD00706D34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0D8447271257FD00706D34 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC0D8424271257F900706D34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF4897327125D13009B7068 /* GameController.swift in Sources */,
+				AC0D8435271257FC00706D34 /* Persistence.swift in Sources */,
+				AC0D842E271257F900706D34 /* ContentView.swift in Sources */,
+				AC0D842C271257F900706D34 /* PongmobileApp.swift in Sources */,
+				AC0D8438271257FC00706D34 /* Pongmobile.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0D843A271257FD00706D34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0D8443271257FD00706D34 /* PongmobileTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0D8445271257FD00706D34 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0D844E271257FD00706D34 /* PongmobileUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC0D8440271257FD00706D34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC0D8427271257F900706D34 /* Pongmobile */;
+			targetProxy = AC0D843F271257FD00706D34 /* PBXContainerItemProxy */;
+		};
+		AC0D844B271257FD00706D34 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC0D8427271257F900706D34 /* Pongmobile */;
+			targetProxy = AC0D844A271257FD00706D34 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AC0D8450271257FD00706D34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AC0D8451271257FD00706D34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC0D8453271257FD00706D34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Pongmobile/Preview Content\"";
+				DEVELOPMENT_TEAM = 25K6PDW2HY;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../../lib",
+				);
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Pongmobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CODE_SIGN_FLAGS = "--deep";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.4gophers.Pongmobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Pongmobile/Mobile-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Debug;
+		};
+		AC0D8454271257FD00706D34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Pongmobile/Preview Content\"";
+				DEVELOPMENT_TEAM = 25K6PDW2HY;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/../../lib",
+				);
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = Pongmobile/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_CODE_SIGN_FLAGS = "--deep";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.4gophers.Pongmobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Pongmobile/Mobile-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_WORKSPACE = YES;
+			};
+			name = Release;
+		};
+		AC0D8456271257FD00706D34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25K6PDW2HY;
+				INFOPLIST_FILE = PongmobileTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.4gophers.PongmobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pongmobile.app/Pongmobile";
+			};
+			name = Debug;
+		};
+		AC0D8457271257FD00706D34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25K6PDW2HY;
+				INFOPLIST_FILE = PongmobileTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.4gophers.PongmobileTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pongmobile.app/Pongmobile";
+			};
+			name = Release;
+		};
+		AC0D8459271257FD00706D34 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25K6PDW2HY;
+				INFOPLIST_FILE = PongmobileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.4gophers.PongmobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pongmobile;
+			};
+			name = Debug;
+		};
+		AC0D845A271257FD00706D34 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 25K6PDW2HY;
+				INFOPLIST_FILE = PongmobileUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ru.4gophers.PongmobileUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pongmobile;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC0D8423271257F900706D34 /* Build configuration list for PBXProject "Pongmobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0D8450271257FD00706D34 /* Debug */,
+				AC0D8451271257FD00706D34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC0D8452271257FD00706D34 /* Build configuration list for PBXNativeTarget "Pongmobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0D8453271257FD00706D34 /* Debug */,
+				AC0D8454271257FD00706D34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC0D8455271257FD00706D34 /* Build configuration list for PBXNativeTarget "PongmobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0D8456271257FD00706D34 /* Debug */,
+				AC0D8457271257FD00706D34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC0D8458271257FD00706D34 /* Build configuration list for PBXNativeTarget "PongmobileUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0D8459271257FD00706D34 /* Debug */,
+				AC0D845A271257FD00706D34 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AC0D8436271257FC00706D34 /* Pongmobile.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AC0D8437271257FC00706D34 /* Pongmobile.xcdatamodel */,
+			);
+			currentVersion = AC0D8437271257FC00706D34 /* Pongmobile.xcdatamodel */;
+			path = Pongmobile.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AC0D8420271257F900706D34 /* Project object */;
+}
